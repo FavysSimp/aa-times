@@ -1,1 +1,28 @@
 /* Your code here */
+.main-nav {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 11px 0;
+}
+
+.main-nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.main-nav li {
+    padding: 0 5px;
+}
+
+.main-nav > ul > li:last-child {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-nav {
+        display: none;
+    }
+}

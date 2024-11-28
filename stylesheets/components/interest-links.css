@@ -1,1 +1,75 @@
 /* Your code here */
+.interest-links {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr 1.8fr 1fr 1.8fr 1.8fr 1fr .75fr;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 120px;
+    padding: 11px;
+}
+
+.interest-links__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest-links__img-container img {
+    height: 60px;
+    width: 60px;
+}
+
+.interest-links__titles {
+    font-weight: 780;
+}
+
+.interest-links__text {
+    border-right: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    padding-top: 3px;
+    padding-right: 11px;
+    font-size: 11px;
+}
+
+.interest-links__stocks-text {
+    box-sizing: border-box ;
+    border-right: 1px solid #e2e2e2;
+    padding: 10px 15px;
+    justify-content: space-between;
+    flex-flow: column;
+    display: flex;
+    font-size: 11px;
+
+}
+
+.interest-links__stocks {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.interest-links__stocks-text > div:last-child {
+    border: none;
+}
+
+.green-numbers {
+    color: green;
+    font-weight: bold;
+}
+
+
+.interest-links__temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .interest-links {
+        display: none;
+    }
+}

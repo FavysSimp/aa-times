@@ -1,1 +1,116 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "menu . action-buttons"
+        ". technologies ."
+        "date logo paper";
+    position: relative;
+}
+
+.masthead__menu-and-search {
+    align-items: center;
+    display: flex;
+    grid-area: menu;
+    padding-left: 20px;
+}
+
+.fontawesome-icons {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.fontawesome-icons:hover {
+    background-color: #f7f7f5;
+    cursor: pointer;
+}
+
+.masthead__actions {
+    align-items: center;
+    display: flex;
+    grid-area: action-buttons;
+    justify-content: flex-end;
+}
+
+.masthead__actions div {
+    align-items: center;
+    display: flex;
+    height: 2.7em;
+}
+
+.masthead__technologies {
+    background-color: white;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    display: flex;
+    grid-area: technologies;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 1px;
+}
+
+.languages {
+    color: #6f6f6f;
+    font-size: 10px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.masthead__date {
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    font-size: 11px;
+    grid-area: date;
+    padding-bottom: 11px;
+}
+
+.masthead__logo {
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    grid-area: logo;
+    justify-content: center;
+    padding-bottom: 11px;
+    padding-top: 20px;
+}
+
+.masthead__paper {
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    font-size: 11px;
+    grid-area: paper;
+    justify-content: flex-end;
+    padding-bottom: 11px;
+}
+
+.masthead__paper div {
+    padding-right: 5px;
+}
+
+button {
+    background-color: #6288a5;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11;
+    margin: 0 4px;
+    padding: 5px 9px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #326891;
+    transition-duration: .3s;
+}
+
+@media screen and (max-width: 720px) {
+
+}
